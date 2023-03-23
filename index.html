@@ -9,7 +9,7 @@
     <script src="index.js" defer></script>
     <title>rockPaperScissorsGame</title>
 </head>
-<body>
+<body class="preload">
     <div class="container">
         <header class="header">
             <img class="logo" src="./images/logo.svg" alt="logo">
@@ -37,17 +37,27 @@
         </section> 
     </div>
 
-    <button class="rules-btn" tabindex="1">rules</button>
+    <section class="results">
+        <h2 class="results_heding">you picked</h2>
+        <h2 class="results_heding">the house picked</h2>
+        <div class="results_result"></div>
+        <div class="results_result"></div>
+    </section>
 
+    <button class="rules-btn" tabindex="1">rules</button>
     <div class="modal">
         <div class="modal_container">
             <header class="modal_header">
                 <h2 class="modal_heading">rules</h2>
-                <button class="close_btn">
+                <button class="close-btn">
                     <img src="./images/icon-close.svg" alt="Close Button">
                 </button>
             </header>
-            <img src="./images/image-rules.svg" alt="Rules Image" class="rules-img">
+            <img 
+            src="./images/image-rules.svg" 
+            alt="Rules Image" 
+            class="rules-img"
+            />
         </div>
     </div>
 
