@@ -40,15 +40,15 @@ let score = 0;
 choiceButtons.forEach( button => {
     button.addEventListener('click', () => {
         const choiceName = button.dataset.choice;
-        const choice = CHOICES.find(choice => choice.name == choiceName);
+        const choice = CHOICES.find((choice) => choice.name = choiceName);
         choose(choice);
-    })    
-})
+    });   
+});
 
 function choose(choice) {
     const aiChoice = aiChoose ();
-    displayResults([choice,aiChoice]);
-    displayResults([choice,aiChoice]); 
+    displayResults([choice, aiChoice]);
+    displayWinner([choice, aiChoice]); 
 }
 
 function aiChoose() {
@@ -62,7 +62,7 @@ function displayResults(results) {
         resultDiv.innerHTML = `
         <div class="choice ${results[idx].name}">
         <img src="images/icon-${results[idx].name}.svg" alt="${results[idx].name}
-        " />
+        " >
         </div>
         `
     }, idx *  1000);

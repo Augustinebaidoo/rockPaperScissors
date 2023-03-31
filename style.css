@@ -242,7 +242,7 @@
      }
  }
 
- .result_winner {
+ .results_winner {
      display: grid;
      grid-area: result-winner;
      place-items: center;
