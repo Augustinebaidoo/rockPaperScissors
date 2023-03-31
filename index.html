@@ -1,76 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-    <link rel="stylesheet" href="style.css">
-    <script src="index.js" defer></script>
-    <title>rockPaperScissorsGame</title>
-</head>
-<body class="preload">
-    <div class="container">
-        <header class="header">
-            <img class="logo" src="./images/logo.svg" alt="logo">
-            <div class="score">
-                <div class="score_title">score</div>
-                <div class="score_number">12</div>
-            </div> 
-        </header>
-        <section class="game">
-            <button class="choice-btn" data-choice="paper">
-                <div class="paper choice">
-                    <img src="./images/icon-paper.svg" alt="Paper">
-                </div>
-            </button>
-            <button class="choice-btn" data-choice="scissors">
-                <div class="scissors choice">
-                    <img src="./images/icon-scissors.svg" alt="Scissors">
-                </div>
-            </button>
-            <button class="choice-btn" data-choice="rock">
-                <div class="rock choice">
-                    <img src="./images/icon-rock.svg" alt="Rock">
-                </div>
-            </button>
-        </section> 
-    </div>
 
-    <section class="results hidden">
-        <h2 class="results_heading">you picked</h2>
-        <h2 class="results_heading">the house picked</h2>
-        <div class="results_result"></div>
-        <div class="results_winner hidden">
-            <h3 class="results_text"></h3>
-            <button class="play-again">play again</button>
-        </div>
-        <div class="results_result"></div>
-    </section>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+        <link rel="stylesheet" href="style.css">
+        <script src="index.js" defer></script>
+        <title>rockPaperScissorsGame</title>
+    </head>
 
-    <button class="rules-btn" tabindex="1">rules</button>
-    <div class="modal">
-        <div class="modal_container">
-            <header class="modal_header">
-                <h2 class="modal_heading">rules</h2>
-                <button class="close-btn">
-                    <img src="./images/icon-close.svg" alt="Close Button">
-                </button>
+    <body class="preload">
+        <div class="container">
+            <header class="header">
+                <img class="logo" src="./images/logo.svg" alt="logo">
+                <div class="score">
+                    <div class="score_title">score</div>
+                    <div class="score_number">0</div>
+                </div>
             </header>
-            <img 
-            src="./images/image-rules.svg" 
-            alt="Rules Image" 
-            class="rules-img"
-            />
+            <section class="game">
+                <button class="choice-btn" data-choice="paper">
+                    <div class="paper choice">
+                        <img src="./images/icon-paper.svg" alt="Paper">
+                    </div>
+                </button>
+                <button class="choice-btn" data-choice="scissors">
+                    <div class="scissors choice">
+                        <img src="./images/icon-scissors.svg" alt="Scissors">
+                    </div>
+                </button>
+                <button class="choice-btn" data-choice="rock">
+                    <div class="rock choice">
+                        <img src="./images/icon-rock.svg" alt="Rock">
+                    </div>
+                </button>
+            </section>
         </div>
-    </div>
 
-    <footer class="footer">
-        <div class="attribution">
-            Coded by
-            <a href="https://github.com/Augustinebaidoo" target="_blank"> Augustine Baidoo</a>
+        <section class="results hidden">
+            <h2 class="results_heading">you picked</h2>
+            <h2 class="results_heading">the house picked</h2>
+            <div class="results_result"></div>
+            <div class="results_winner hidden">
+                <h3 class="results_text"></h3>
+                <button class="play-again">play again</button>
+            </div>
+            <div class="results_result"></div>
+        </section>
+
+        <button class="rules-btn" tabindex="1">rules</button>
+        <div class="modal">
+            <div class="modal_container">
+                <header class="modal_header">
+                    <h2 class="modal_heading">rules</h2>
+                    <button class="close-btn">
+                        <img src="./images/icon-close.svg" alt="Close Button">
+                    </button>
+                </header>
+                <img src="./images/image-rules.svg" alt="Rules Image" class="rules-img" />
+            </div>
         </div>
-    </footer>
-    
-</body>
+
+        <footer class="footer">
+            <div class="attribution">
+                Coded by
+                <a href="https://github.com/Augustinebaidoo" target="_blank"> Augustine Baidoo</a>
+            </div>
+        </footer>
+
+    </body>
+
 </html>
