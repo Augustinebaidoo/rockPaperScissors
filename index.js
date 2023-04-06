@@ -40,7 +40,7 @@ let score = 0;
 choiceButtons.forEach( button => {
     button.addEventListener('click', () => {
         const choiceName = button.dataset.choice;
-        const choice = CHOICES.find((choice) => choice.name = choiceName);
+        const choice = CHOICES.find(choice => choice.name === choiceName);
         choose(choice);
     });   
 });
@@ -64,7 +64,7 @@ function displayResults(results) {
         <img src="images/icon-${results[idx].name}.svg" alt="${results[idx].name}
         " >
         </div>
-        `
+        `;
     }, idx *  1000);
     })
 
@@ -72,7 +72,7 @@ function displayResults(results) {
     resultsDiv.classList.toggle("hidden");
 }
 
-
+ 
 function displayWinner(results) {
     setTimeout(() => {
         const userWins = isWinner(results);
@@ -95,7 +95,7 @@ function displayWinner(results) {
 }
 
 function isWinner(results) {
-    return results[0].beats = results[1].name;
+    return results[0].beats === results[1].name;
 }
 
 function keepScore(point) {
