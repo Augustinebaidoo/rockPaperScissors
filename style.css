@@ -42,14 +42,16 @@
      display: flex;
      justify-content: space-between;
      align-items: center;
-     height: 10rem;
+     height: 9.5rem;
      border: 0.2rem solid var(--outline);
      border-radius: 1.3rem;
      padding: 1rem 1.5rem 1rem 2rem;
+     max-width: 700px;
  }
 
  .logo {
      height: 100%;
+     max-width: 15rem;
  }
 
  .score {
@@ -59,7 +61,7 @@
      justify-content: center;
      background: var(--light-text);
      border-radius: 0.6rem;
-     max-width: 10rem;
+     max-width: 15rem;
      padding: 1.5rem 2rem;
      height: 100%;
  }
@@ -85,8 +87,8 @@
          "paper scissors"
          "rock rock";
      place-items: center;
-     height: 30rem;
-     padding-top: 4rem;
+     height: 28rem;
+     padding-top: 2.5rem;
  }
 
  .game::before {
@@ -95,7 +97,7 @@
      width: 100%;
      height: 100%; 
      left: 28%;
-     top: 35%;
+     top: 30%;
      background: url('./images/bg-triangle.svg') no-repeat;
      z-index: -1;
  }
@@ -109,14 +111,14 @@
    
  .choice {
      position: relative;
-     width: 10rem;
-     height: 10rem;
+     width: 9rem;
+     height: 9rem;
      background: var(--light-text);
      border-radius: 50%;
      display: flex;
      justify-content: center;
      align-items: center;
-     /* box-shadow: inset 0 0.5rem var(--shadow-light); */
+     box-shadow: inset 0 0.5rem var(--shadow-light);
  }
 
  .choice::before,
@@ -268,7 +270,7 @@
 
  .rules-btn {
      position: absolute;
-     bottom: 2rem;
+     bottom: -2rem;
      right: 2rem;
      background: none;
      outline: none;
@@ -335,21 +337,20 @@
  }
 
  .footer {
-        position: absolute;
-        bottom: 2rem;
-        width: 100%;
-        padding: 0 2rem;
+        position: relative;
+        margin-top: 5rem;
         text-align: center;
  }
 
 
  .attribution {
-     font-size: 12px;
+     font-size: 15px;
      text-align: center;
+     
  }
 
  .attribution a {
-     color: #ff652f;
+     color: #77b33e;
  }
 
 
@@ -359,4 +360,68 @@
 
  .hidden {
      display: none;
+ }
+
+
+ /* Mobile View  */
+ @media screen and (max-width: 425px){
+    .container {
+        max-width: 500px;
+        padding: 1.2rem;
+    }
+
+    .header{   
+        max-width: 350px;
+        place-content: center;
+        height: 7rem;
+        border-radius: 0.7rem;
+        padding: 0.5rem 0.8rem 0.5rem 1.2rem;
+    }
+
+    .logo {
+        height: 60%;
+    }
+
+    .score {
+        padding: 1.5rem 2rem;
+        height: 70%;
+    }
+
+    .score_title {
+        font-size: 1rem;
+        letter-spacing: 0rem;
+    }
+
+    .score_number {
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    .game {
+        height: 20rem;
+        padding: 2rem;
+    }
+
+    /* .choice-btn */
+
+    /* .choice-btn > img */
+
+    /* .results */
+    /* .results_heading */
+    /* .results_result */
+    /* .results_winner */
+    /* .results_text */
+    /* .play-again */
+    /* .rules-btn */
+    /* .modal */
+    /* .modal_container */
+    /* .modal_heading */
+    /* .close-btn */
+    /* .close-btn > img */
+    /* .rules-img  */
+    /* .footer  */
+    
+
+
+
  }
